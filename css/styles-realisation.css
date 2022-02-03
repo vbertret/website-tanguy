@@ -1,0 +1,120 @@
+section.top-page {
+    background: url('../images/cover/cover-realisation.jpg') center;
+    background-size: cover;
+    height: 100vh;
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+.video-section{
+    pointer-events: none;
+}
+
+.video-section > *{
+    pointer-events: auto;
+}
+
+.video-section:hover > * {
+    opacity: 0.4;
+  }
+  
+.video-section:hover > *:hover {
+    opacity: 1;
+  }
+
+.video-container{
+    margin : 10% 30%;
+    display: grid;
+    justify-content:  center;
+    align-items: center;
+    align-content: center;
+    width : 40%;
+    transition: all 1s;
+    transition-delay: -150ms;
+}
+
+.video-container video{
+    width: 100%;
+}
+
+.video-container .title-video{
+    width: 100%;
+    font-size : 2vw;
+    text-align : center;
+}
+
+.video-container:hover{
+    cursor: pointer;
+    width : 96%;
+    margin : 10% 2%;
+    grid-template-columns: 70% 30%;
+}
+
+.video-container:hover video{
+    width : 100%;
+    grid-column: 1;
+}
+
+.video-container:hover .title-video{
+    width : 100%;
+    grid-column: 1;
+}
+
+.video-container .description{
+    display: none;
+}
+
+.description h3{
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.description {
+    margin-left : 3%;
+    text-align: left;
+}
+
+.description > p{
+    font-size: 1.2vw;
+}
+
+.description > p > b{
+    font-size: 1.2vw;
+}
+
+.video-container:hover .description{
+    height : 100%;
+    display: block;
+    grid-column: 2;
+    grid-row : 1;
+    animation: fade-in 1s;
+}
+
+/* .video-container:not(:hover) .description.did-fade-in{
+    height : 100%;
+    display: 	block;
+    grid-column: 2;
+    grid-row : 1;
+    animation: fade-out 1s;
+} */
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.video-section .video-container h2{
+    font-family: CormorantGaramond-Medium;
+}
+
+.video-section .video-container .description > *{
+    font-family: CormorantGaramond-Medium;
+}
+  
+
+
+

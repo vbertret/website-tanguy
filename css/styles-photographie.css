@@ -1,0 +1,122 @@
+section.top-page {
+    background: url('../images/cover/cover-photographie.jpg') center;
+    background-size: cover;
+    height: 100vh;
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+.photo-section{
+    pointer-events: none;
+}
+
+.photo-section > *{
+    pointer-events: auto;
+}
+
+.photo-section:hover > * {
+    opacity: 0.4;
+  }
+  
+.photo-section:hover > *:hover {
+    opacity: 1;
+  }
+
+.photo-container{
+    margin : 5% 30%;
+    display: grid;
+    justify-content:  center;
+    align-items: center;
+    align-content: center;
+    transition: all 1s;
+    transition-delay: -150ms;
+}
+
+.photo-container img{
+    /* width: 100%; */
+    max-height: 50vh;
+    width: auto;
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.photo-container .title-photo{
+    width: 100%;
+    font-size : 2vw;
+    text-align : center;
+}
+
+.photo-container:hover{
+    cursor: pointer;
+    width : 96%;
+    margin : 10% 2%;
+    grid-template-columns: 70% 30%;
+}
+
+.photo-container:hover img{
+    max-height: 80vh;
+    max-width: 65vw;
+    width: auto;
+    grid-column: 1;
+    margin: 0 auto;
+}
+
+.photo-container:hover .title-photo{
+    width : 100%;
+    grid-column: 1;
+}
+
+.photo-container .description{
+    display: none;
+}
+
+.description h3{
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.description {
+    margin-left : 3%;
+    text-align: left;
+}
+
+.description > p{
+    font-size: 1.2vw;
+}
+
+.description > p > b{
+    font-size: 1.2vw;
+}
+
+.photo-container:hover .description{
+    height : 100%;
+    display: block;
+    grid-column: 2;
+    grid-row : 1;
+    animation: fade-in 1s;
+}
+
+/* .video-container:not(:hover) .description.did-fade-in{
+    height : 100%;
+    display: 	block;
+    grid-column: 2;
+    grid-row : 1;
+    animation: fade-out 1s;
+} */
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.photo-section .photo-container h2{
+    font-family: CormorantGaramond-Medium;
+}
+
+.photo-section .photo-container .description > *{
+    font-family: CormorantGaramond-Medium;
+}
