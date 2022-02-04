@@ -16,6 +16,7 @@
     /* width: 25%; */
     color: white;
     text-align: center;
+    cursor: pointer;
 }
 
 .titre > h1{
@@ -214,9 +215,9 @@ nav > li:hover .sous-cat{
 
 .grid-container {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 30px;
   background-color: white;
-  padding: 20px;
+  padding: 100px;
 }
 
 @media (min-width: 100px) {
@@ -257,17 +258,17 @@ nav > li:hover .sous-cat{
     vertical-align: middle;
   }
 
-.grid-container h2:hover{
-    font-size: 3.5vw;
+.grid-container .wrap:hover h2{
+    font-size: 3vw;
 }
 
 .grid-container h2{
     text-align: center;
     /* background-color: green; */
     color: white;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-family: CormorantGaramond-Medium;
-    transition: 0.5s;
+    transition: all 0.5s ease-out;
 }
 
 .wrap{
