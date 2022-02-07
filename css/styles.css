@@ -222,9 +222,9 @@ nav > li:hover .sous-cat{
 
 .grid-container {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 5vw;
   background-color: white;
-  padding: 100px;
+  padding: 5vw;
 }
 
 @media (min-width: 100px) {
