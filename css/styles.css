@@ -284,8 +284,8 @@ footer {
     background-color: gray;
     color: #fff;
     padding: 2vh;
-    height: 7vh;
-    line-height: 7vh;
+    height: 4vw;
+    line-height: 4vw;
     font-style: bold;
 }
 
@@ -312,12 +312,12 @@ footer {
 
 .social-media-footer a{
 	display: inline-block;
-	height: 7vh;
-	width: 7vh;
+	height: 4vw;
+	width: 4vw;
     /* aspect-ratio: 1/1; */
 	background-color: rgba(255,255,255,0.2);
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 1vw;
+    margin-left: 1vw;
 	text-align: center;
 	/* line-height: 20px; */
 	border-radius: 50%;
