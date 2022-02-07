@@ -283,23 +283,25 @@ footer {
     grid-template-columns: repeat(3, 1fr); 
     background-color: gray;
     color: #fff;
-    padding: 10px;
-    height: 40px;
-    line-height: 40px;
+    padding: 2vh;
+    height: 7vh;
+    line-height: 7vh;
     font-style: bold;
 }
 
 .footer-name{
     margin-left: 10%;
+    margin-top : auto;
+    margin-bottom: auto;
     text-align: left;
-    /* background-color: green; */
     
 }
 
 .to-top-page{
     text-align: right;
     margin-right: 10%;
-    /* background-color: orange; */
+    margin-top : auto;
+    margin-bottom: auto;
 }
 
 .social-media-footer{
@@ -310,13 +312,14 @@ footer {
 
 .social-media-footer a{
 	display: inline-block;
-	height: 30px;
-	width: 30px;
+	height: 7vh;
+	width: 7vh;
+    /* aspect-ratio: 1/1; */
 	background-color: rgba(255,255,255,0.2);
     margin-right: 10px;
     margin-left: 10px;
 	text-align: center;
-	line-height: 30px;
+	/* line-height: 20px; */
 	border-radius: 50%;
 	color: #ffffff;
 	transition: all 0.5s ease;
