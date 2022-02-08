@@ -64,6 +64,7 @@ nav.nav li a{
 }
 
 .sous-cat{
+    /* overflow: hidden; */
     display: none;
     list-style: none;
     position: absolute;
@@ -71,12 +72,13 @@ nav.nav li a{
 }
 
 .sous-cat li{
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-top: 3px;
 }
 
 
 nav > li:hover .sous-cat{
+    /* overflow: hidden; */
     display: block;
     /* width:100%; */
     text-align: left;
