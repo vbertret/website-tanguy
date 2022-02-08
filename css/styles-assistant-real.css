@@ -13,7 +13,7 @@ body {
 } */
 
 body {
-  background: #16384c;
+  /* background: #16384c; */
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 10px;
   color: #000;
@@ -22,9 +22,9 @@ body {
 }
 
 .swiper {
-  width: 80%;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  width: 100%;
+  padding-top: 15vh;
+  padding-bottom: 22vh;
 }
 
 .mySwiper{
@@ -64,26 +64,44 @@ body {
   position:relative;
   display: flex;
   width: 100%;
-  background-color: #fff;
+  background-color: #cccccc;
   flex-direction: column;
   padding: 15px 15px;
-  transition : 0.3s ease-in-out;
+  transition : 0.7s ease-in-out;
   max-height: 25vw;
+  transition-delay: 0.2s;
+  border : 2px solid black;
 }
 
-.swiper-slide .card:hover{
+.swiper-slide .active-slide{
+  /* background-color: red; */
   max-height: 40vw;
+  transition : 0.3s ease-in-out;
 }
 
-.swiper-slide:hover{
+/* .swiper-slide .card:hover{
+  max-height: 40vw;
+  transition : 0.3s ease-in-out;
+  transition-delay: 0s;
+} */
+
+/* .swiper-slide:hover{
   width : 30vw;
   max-height: 30vw;
-}
+} */
 
 .swiper-slide .card .card-content{
   visibility: hidden;
   opacity: 0;
   text-align: center;
+  transition : 0.3s ease-in-out;
+  transition-delay : 0s;
+}
+
+.swiper-slide .active-slide .card-content{
+  margin-top: 10px;
+  visibility: visible;
+  opacity: 1;
   transition : 0.3s ease-in-out;
   transition-delay : 0.3s;
 }
@@ -92,14 +110,17 @@ body {
   font-size: 0.8em;
 }
 
-.swiper-slide .card:hover .card-content{
+/* .swiper-slide .card:hover .card-content{
   margin-top: 10px;
   visibility: visible;
   opacity: 1;
-}
+} */
 
 .swiper-slide .card img{
+  background-size: cover;
   width : 100%;
+  height: 22vw;
   position : relative;
   z-index : 1;
 }
+
