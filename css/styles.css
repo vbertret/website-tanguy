@@ -71,13 +71,14 @@ nav.nav li a{
 }
 
 .sous-cat li{
+    overflow: hidden;
     margin-top: 3px;
 }
 
 
 nav > li:hover .sous-cat{
     display: block;
-    width:100%;
+    /* width:100%; */
     text-align: left;
 }
 
