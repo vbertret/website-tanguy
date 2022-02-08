@@ -81,37 +81,31 @@ nav > li:hover .sous-cat{
     text-align: left;
 }
 
-/* .deroulant > a::before{
-    content : "\25BC";
-} */
 
-/* Slider */ 
-
-.actu{
-    width:100%;
-    margin-bottom: 50px;
-    /* background-color: green; */
-}
-
-.slides{
-    /* visibility: hidden; */
-    display:none;
-    animation: smooth_trans 2s;
-}
-
-@keyframes smooth_trans{from{opacity:0.2} to{opacity:1}}
-
+/* slider */
 .slider{
-    position:relative;
-    /* overflow: hidden; */
-    animation: slider 2s;
+    position : relative;
+    display: flex;
+    overflow: hidden;
 }
 
 .slides img{
+    padding-right : 0vw;
+    padding-left: 0vw;
     object-fit: cover;
-    width: 100%;
-    height : 80vh
+    width: 100vw;
+    height : 80vh;
 }
+
+.slides{
+    /* padding : 1vw; */
+    position : relative;
+    left : 0;
+    transition : 1s;
+}
+
+@keyframes swipe-left{from{left : 0;} to{left : -100vw;}}
+
 
 .actu button{
     border:none;
@@ -349,6 +343,4 @@ footer {
     cursor: pointer;
     color: white;
 }
-
-
 
