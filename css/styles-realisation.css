@@ -23,12 +23,12 @@ section.top-page {
   }
 
 .video-container{
-    margin : 10% 30%;
+    margin : 10% auto;
     display: grid;
     justify-content:  center;
     align-items: center;
     align-content: center;
-    width : 40%;
+    width : 60%;
     transition: all 1s;
     transition-delay: -150ms;
 }
