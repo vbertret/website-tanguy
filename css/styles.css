@@ -21,11 +21,12 @@
 
 .titre > h1{
     font-weight: bold;
+    font-size: 2.5vw;
 }
 
 .titre > h2{
     font-weight: regular;    
-    font-size: 1.2vw;
+    font-size: 1.5vw;
 }
 
 header.header {
@@ -219,9 +220,9 @@ nav > li:hover .sous-cat{
 
 .grid-container {
   display: grid;
-  grid-gap: 6vw;
+  grid-gap: 4vw;
   background-color: white;
-  padding: 8vw;
+  padding: 5vw;
 }
 
 @media (min-width: 100px) {
