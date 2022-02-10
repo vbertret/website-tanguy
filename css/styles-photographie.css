@@ -241,10 +241,111 @@ section.top-page {
 }
 
 .grid-photo img{
+    display: block;
     width:100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
 }
+
+.grid-photo img:hover{
+    opacity: 0.95;
+}
+
+/* Title overlay */
+
+.item-grid{
+    position: relative;
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top : 20px;
+    text-align: center;
+}
+
+.item-grid:hover .overlay {
+    opacity: 1;
+}
+
+/* Image foreground */
+
+.foreground-content{
+    z-index:1000;
+    display:none;
+    /* padding-top:5vh; */
+    /* padding-bottom:5vh; */
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    /* overflow:auto; */
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.7)
+}
+
+.foreground-div{
+    display :flex;
+    margin:auto;
+    /* background-color: white; */
+    height: 100%;
+    /* margin:auto; */
+    /* background-color:#fff; */
+    /* position:relative; */
+    /* align-items: center; */
+    /* margin:0 10px; */
+    /* width:auto!important */
+}
+
+.content-animate-zoom {animation:animatezoom 0.6s}
+
+@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+
+.img-for{
+    margin : auto;
+    display: block;
+    width: auto;
+    height : auto;
+    max-height: 90vh;
+    max-width : 90vw;
+}
+
+.button-foreground{
+    position:absolute;
+    right:0;
+    top:0;
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:white;
+    background-color:black;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    font-size:24px!important;
+}
+
+.button-foreground:hover{
+    color:white!important;
+    background-color:#f44336!important
+}
+
 
 
 
