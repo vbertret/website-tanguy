@@ -1,0 +1,7 @@
+section.top-page {
+    background: url('../images/cover/cover-realisation.jpg') center;
+    background-size: cover;
+    height: 100vh;
+    padding: 25px;
+    margin-bottom: 50px;
+}

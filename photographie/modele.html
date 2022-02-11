@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/styles-modele.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Tanguy Carrée</title>
+</head>
+<body>
+    
+    <section class="top-page">
+        <header class="header">
+            <div class="titre" onclick='location.href = "../index.html";'>
+                <h1>Tanguy Carrée</h1>
+                <h2>Réalisateur/Photographe</h2>
+            </div>
+            <nav class="nav">
+                <li><a href="../index.html">Accueil</a></li>
+                <li class="deroulant"><a>Mise en scène</a>
+                    <ul class="sous-cat"> 
+                        <li><a href="../mise-en-scene/realisation.html">Réalisation</a></li>
+                        <li><a href="../mise-en-scene/assistant-real.html">Assistant réalisateur</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant"><a class="active">Photographie</a>
+                    <ul class="sous-cat">
+                        <li><a href="./photographie.html">Photographe</a></li>
+                        <li><a href="./modele.html">Modèle</a></li>
+                    </ul>
+                </li>
+                <li><a href="#a propos">&Agrave; propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </nav>
+        </header>       
+    </section>
+
+
+    <script>
+        function scroll_smooth(){
+            window.scroll({
+                top: 0, 
+                left: 0, 
+                behavior: 'smooth'
+            });
+        };
+
+    </script>
+
+
+    <footer>
+        <div class="footer-name">Tanguy Carrée</div>
+        <div class="social-media-footer">
+            <a href="https://www.facebook.com/tanguy.carree" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/tanguycarree/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto: carree.tanguy@gmail.com " target="_blank" onClick="javascript:window.open('mailto:carree.tanguy@gmail.com', 'my-window');event.preventDefault()"><i class="fa fa-envelope"></i></a>    
+        </div>
+        <div class="to-top-page">
+            <button onclick="scroll_smooth()">
+                TOP <i class="fa fa-arrow-up"></i>
+            </button></div>
+    </footer>
+
+</body>
+</html>
