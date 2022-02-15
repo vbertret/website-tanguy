@@ -93,6 +93,7 @@ body {
   /* background-color: red; */
   max-height: 40vw;
   transition : 0.3s ease-in-out;
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
 }
 
 /* .swiper-slide .card:hover{
