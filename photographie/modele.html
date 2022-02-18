@@ -35,6 +35,52 @@
                 <li><a href="#a propos">&Agrave; propos</a></li>
                 <li><a href="#contact">Contact</a></li>
             </nav>
+
+            <!-- Mobile phone navbar -->
+            <div class="hamburger-icon">
+                <div class="bar-icon"  onclick="toggleMobileMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+  
+                <nav class="mobile-menu">
+                    <li><a href="../index.html" class="active">Accueil</a></li>
+                    <li onclick="toggleSousCat(this)"><a>Mise en scène <i class="arrow down"></i> </a>
+                        <ul class="sous-cat"> 
+                            <li><a href="../mise-en-scene/realisation.html">Réalisation</a></li>
+                            <li><a href="../mise-en-scene/assistant-real.html">Assistant réalisateur</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="toggleSousCat(this)"><a>Photographie <i class="arrow down"></i> </a>
+                        <ul class="sous-cat">
+                            <li><a href="./photographie.html">Photographe</a></li>
+                            <li><a href="./modele.html">Modèle</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#a propos">&Agrave; propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </nav>
+  
+                <script>
+  
+                    function toggleMobileMenu(menu){
+                        result = menu.parentNode.classList.toggle('open');
+                        if(result == true){
+                            document.body.style.overflow = "hidden";
+                        }
+                        else{
+                            document.body.style.overflow = "auto";
+                        }
+                    }
+  
+                    function toggleSousCat(index){
+                        index.classList.toggle('deroulant');
+                    }
+  
+                </script>
+  
+            </div>
         </header>       
     </section>
 
