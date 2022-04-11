@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=PT+Sans:ital@1&display=swap');
+
 section.top-page {
     background: url('../images/cover/cover-realisation.jpg') center;
     background-size: cover;
@@ -5,3 +7,58 @@ section.top-page {
     padding: 25px;
     margin-bottom: 50px;
 }
+
+* {
+    font-size: 1.5vw;
+    font-family: 'PT Sans', "sans-serif";
+}
+
+.a-propos{
+    display : flex;
+    height: 100vh;
+    margin-bottom : 5vh;
+    margin-right : 2vw;
+}
+
+.a-propos p{
+    margin-bottom: 10vh;
+    vertical-align: middle;
+    font-family: "Merriweather", sans-serif;
+}
+
+.a-propos h1{
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: red;
+    margin: 0 auto;
+    padding: 5px;
+    margin-bottom: 10vh;
+    transform: skew(-14deg);
+    color: white;
+
+}
+
+.a-propos > .align-right{
+    margin : 0 auto;
+    /* width: 50%; */
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20vh;
+}
+
+.a-propos > .align-left{
+    margin : 0 auto;
+    /* width: 50%; */
+    margin-left : 15px;
+    margin-right:15px;
+}
+
+.align-left img{
+    height: 100%;
+    margin : 0 auto;
+}
+
+
+
