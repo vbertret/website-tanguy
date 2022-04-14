@@ -5,7 +5,7 @@ section.top-page {
     background-size: cover;
     height: 100vh;
     padding: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 * {
@@ -13,52 +13,121 @@ section.top-page {
     font-family: 'PT Sans', "sans-serif";
 }
 
-.a-propos{
-    display : flex;
-    height: 100vh;
-    margin-bottom : 5vh;
-    margin-right : 2vw;
+
+@media (max-width: 1000px) {
+    .a-propos{
+        display : flex;
+        flex-direction: column;
+        /* height: 100vh; */
+        /* margin-bottom : 5vh; */
+        margin-right : 2vw;
+        margin-bottom: 3vh;
+    }
+
+    .align-left img{
+        width: 80vw;
+        object-fit: cover;
+        margin : 0 auto;
+    }
+
+    .a-propos p{
+        margin-bottom: 3vh;
+        vertical-align: middle;
+        font-family: "Merriweather", sans-serif;
+        font-size: 3vw;
+        text-align: center;
+    }
+    
+    .a-propos h1{
+        margin-bottom: 30px;
+        text-align: center;
+        background-color: red;
+        margin: 0 auto;
+        padding: 5px;
+        margin-bottom: 4vh;
+        transform: skew(-14deg);
+        color: white;
+        font-size: 6vw;
+    
+    }
+
+    .a-propos > .align-right{
+        margin : 0 10px;
+        /* width: 50%; */
+        /* margin-left: 15px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+
+    .a-propos > .align-left{
+        margin : 0 auto;
+        /* width: 50%; */
+        /* margin-left : 15px; */
+        /* margin-right:15px; */
+    }
 }
 
-.a-propos p{
-    margin-bottom: 10vh;
-    vertical-align: middle;
-    font-family: "Merriweather", sans-serif;
+@media (min-width: 1000px) {
+    .a-propos{
+        display : flex;
+        height: 100vh;
+        margin-bottom : 5vh;
+        margin-right : 2vw;
+    }
+
+    .a-propos p{
+        margin-bottom: 10vh;
+        vertical-align: middle;
+        font-family: "Merriweather", sans-serif;
+        text-align: center;
+    }
+    
+    .a-propos h1{
+        font-size: 3vw;
+        text-align: center;
+        background-color: red;
+        margin: 0 auto;
+        padding: 5px;
+        margin-bottom: 30px;
+        transform: skew(-14deg);
+        color: white;
+    
+    }
+    
+    .a-propos > .align-right{
+        /* margin : 0 auto; */
+        margin-top : 50px;
+        /* width: 50%; */
+        margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 20vh;
+        order : 2;
+    }
+    
+    .a-propos > .align-left{
+        margin : 0 auto;
+        /* width: 50%; */
+        margin-left : 15px;
+        margin-right:15px;
+        order:1;
+    }
+    
+    .align-left img{
+        height: 100vh;
+        max-width: 50vw;
+        object-fit: cover;
+        margin : 0 auto;
+    }
 }
 
-.a-propos h1{
-    margin-bottom: 30px;
-    text-align: center;
-    background-color: red;
-    margin: 0 auto;
-    padding: 5px;
-    margin-bottom: 10vh;
-    transform: skew(-14deg);
-    color: white;
 
-}
 
-.a-propos > .align-right{
-    margin : 0 auto;
-    /* width: 50%; */
-    margin-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 20vh;
-}
 
-.a-propos > .align-left{
-    margin : 0 auto;
-    /* width: 50%; */
-    margin-left : 15px;
-    margin-right:15px;
-}
 
-.align-left img{
-    height: 100%;
-    margin : 0 auto;
-}
 
 
 
