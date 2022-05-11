@@ -1,0 +1,92 @@
+section.top-page {
+    /* background: url('../images/cover/cover-realisation.jpg') center; */
+    background: black;
+    background-size: cover;
+    height: 10vh;
+    /* padding: 25px; */
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    section.top-page {
+        height: 100%;
+    }
+}
+
+.video-section  *{
+    font-family: CormorantGaramond-Medium;
+}
+
+.video-section .title-video{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.video-section .bar{
+    background-color: black;
+    height: 1px;
+    width: 70%;
+    margin: auto;
+    margin-top : 10px;
+}
+
+
+.video-container{
+    margin-top : 40px;
+}
+
+.video-container{
+    position: relative;
+    width:80%;
+    margin-right : auto;
+    margin-left: auto;
+    height: 80vh;
+}
+
+@media (max-width: 1000px) {
+    .video-container{
+        margin-top : 10px;
+        width: 90%;
+        height: 30vh;
+        z-index: -1;
+    }
+}
+    
+
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* iframe {
+    display: block;
+    margin: 0 auto;
+ } */
+
+ .video-section .description{
+    width: 90%;
+    margin : 0 auto;
+    margin-top : 20px;
+    margin-bottom: 20px;
+ }
+
+ .video-section .description p{
+    font-size: 0.7em;
+    text-align: justify;
+    margin-top: 10px;
+ }
+
+
+
+
+
+
+
+
+  
+
+
+

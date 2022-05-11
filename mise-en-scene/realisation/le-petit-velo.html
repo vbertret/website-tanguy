@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/styles-realisation.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles-realisation-video.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Tanguy Carrée</title>
 </head>
@@ -13,26 +13,26 @@
     
     <section class="top-page">
         <header class="header">
-            <div class="titre" onclick='location.href = "../index.html";'>
+            <div class="titre" onclick='location.href = "../../index.html";'>
                 <h1>Tanguy Carrée</h1>
                 <h2>Réalisateur/Photographe</h2>
             </div>
             <nav class="nav">
-                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../../index.html">Accueil</a></li>
                 <li class="deroulant"><a class="active">Mise en scène</a>
                     <ul class="sous-cat"> 
-                        <li><a href="./realisation.html">Réalisation</a></li>
-                        <li><a href="./assistant-real.html">Assistant réalisateur</a></li>
+                        <li><a href="../realisation.html">Réalisation</a></li>
+                        <li><a href="../assistant-real.html">Assistant réalisateur</a></li>
                     </ul>
                 </li>
                 <li class="deroulant"><a>Photographie</a>
                     <ul class="sous-cat">
-                        <li><a href="../photographie/photographie.html">Photographe</a></li>
-                        <li><a href="../photographie/modele.html">Modèle</a></li>
+                        <li><a href="../../photographie/photographie.html">Photographe</a></li>
+                        <li><a href="../../photographie/modele.html">Modèle</a></li>
                     </ul>
                 </li>
-                <li><a href="../a-propos.html">&Agrave; propos</a></li>
-                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../../a-propos.html">&Agrave; propos</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
             </nav>
 
             <!-- Mobile phone navbar -->
@@ -44,21 +44,21 @@
                 </div>
     
                 <nav class="mobile-menu">
-                    <li><a href="../index.html" class="active">Accueil</a></li>
+                    <li><a href="../../index.html" class="active">Accueil</a></li>
                     <li onclick="toggleSousCat(this)"><a>Mise en scène <i class="arrow down"></i> </a>
                         <ul class="sous-cat"> 
-                            <li><a href="./realisation.html">Réalisation</a></li>
-                            <li><a href="./assistant-real.html">Assistant réalisateur</a></li>
+                            <li><a href="../realisation.html">Réalisation</a></li>
+                            <li><a href="../assistant-real.html">Assistant réalisateur</a></li>
                         </ul>
                     </li>
                     <li onclick="toggleSousCat(this)"><a>Photographie <i class="arrow down"></i> </a>
                         <ul class="sous-cat">
-                            <li><a href="../photographie/photographie.html">Photographe</a></li>
-                            <li><a href="../photographie/modele.html">Modèle</a></li>
+                            <li><a href="../../photographie/photographie.html">Photographe</a></li>
+                            <li><a href="../../photographie/modele.html">Modèle</a></li>
                         </ul>
                     </li>
-                    <li><a href="../a-propos.html">&Agrave; propos</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../../a-propos.html">&Agrave; propos</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
                 </nav>
     
                 <script>
@@ -85,28 +85,37 @@
 
     <section class="video-section">
 
-            <div class="video-container">
-                <div class="video-vignette" onclick='location.href = "./realisation/le-petit-velo.html";'>
-                    <img src="../images/real/Le Ciel Brille.jpg" alt="Le ciel brille">
-                    <i class="fas fa-play"></i>
-                </div>
-                <h1> LE CIEL BRILLE - JULIETTE C </h1>
+        <h2 class="title-video"> Le Petit Vélo </h2>
+
+        <div class="bar"></div>
+
+            <div class="video-container" preload="true" id=1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/woFkigktuiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-            <div class="video-container">
-                <div class="video-vignette">
-                    <img src="../images/real/Le Petit Velo.jpg" alt="Le petit velo">
-                    <i class="fas fa-play"></i>
-                </div>
-                <h1> LE PETIT VELO</h1>
-            </div>
+            <div class="description">
+                <!-- <h3>Description</h3> -->
 
-            <div class="video-container">
-                <div class="video-vignette">
-                    <img src="../images/real/Les Oublies.jpg" alt="Les oubliés">
-                    <i class="fas fa-play"></i>
-                </div>
-                <h1> LES OUBLIES </h1>
+                <p> <b>Genre</b> :  Drame Fantastique </p>
+                <p> <b>Comédiens</b>: Ewen Ménard, Gabriel Guillerit, Mahé Le Bars, Arthur Raulet, Sacha Arethura et Aélie Laurent-Vielcanet </p>
+                <p> <b>Production</b> : Léa Sanz</p>
+                <p> <b>Écriture</b> et Réalisation : Tanguy Carrée </p>
+                <p> <b>Directeur de la Photographie</b> : Théo L’Haridon </p>
+                <p> <b>Monteur</b> : Hugo Sterchi </p>
+                <p> <b>Premier Assistant-Réalisateur</b> : Tristan Cousquer </p>
+                <p> <b>Second Assistant-Réalisateur et Directeur de Casting</b> : Diégo Maunoury </p>
+                <p> <b>Assistant-Cadre</b> : Thomas Czerwinski </p>
+                <p> <b>Chef Électro</b> : Louis Gérard </p>
+                <p> <b>Cheffe Machino</b> : Léna Denis </p>
+                <p> <b>Machino</b> : Benjamin Lecarpentier </p>
+                <p> <b>Assistant-Monteur</b> : Romain Dupé </p>
+                <p> <b>Chef-Opérateur Son et Monteur</b> : Étienne Boué </p>
+                <p> <b>Assistant Chef-Opérateur Son et Monteur</b> : Arthur Maingé </p>
+                <p> <b>Perchman et Mixeur</b> : Baptiste Guillet </p>
+                <p> <b>Compositeurs</b> : Valentin Joly et Baptiste Guillet </p>
+                <p> <b>Régisseuse Générale</b> : Nolwen Benoit </p>
+                <p> <b>Régisseurs</b> : William Lacroix, Pauline Herlent et Vincent Denis </p>
+ 
             </div>
 
     </section>
@@ -119,36 +128,6 @@
                 behavior: 'smooth'
             });
         };
-
-        function isInViewport(el) {
-            const rect = el.getBoundingClientRect();
-            return (
-                rect.top >= -50 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)  + 50 &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-
-            );
-        }
-
-        var x = document.getElementsByClassName("video-container");
-
-        document.addEventListener('scroll', function () {
-
-            for (i = 0; i < x.length; i++) {
-                if (isInViewport(x[i])) {
-                    x[i].classList.add("active-div")
-                }
-                else{
-                    x[i].classList.remove("active-div")
-                }
-                }
-
-        }, {
-            passive: true
-        });
-
-
 
     </script>
 
