@@ -20,8 +20,6 @@ section.top-page {
   }
 }
 
-
-
 /* html,
 body {
   position: relative;
@@ -41,6 +39,12 @@ body {
   width: 100%;
   padding-top: 15vh;
   padding-bottom: 22vh;
+  margin-bottom: 50px;
+
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 .mySwiper{
@@ -60,8 +64,8 @@ body {
 
 .swiper-slide {
   background-position: center;
-  width: 25vw;
-  height: 25vw;
+  width: 27vw;
+  height: 27vw;
   position:relative;
   display: flex;
   justify-content: center;
@@ -80,13 +84,15 @@ body {
   position:relative;
   display: flex;
   width: 100%;
-  background-color: #cccccc;
+  
+  background: #fff;
+  border-radius: 10px;
   flex-direction: column;
   padding: 15px 15px;
   transition : 0.7s ease-in-out;
-  max-height: 25vw;
+  max-height: 27vw;
   transition-delay: 0.2s;
-  border : 2px solid black;
+  /* border : 0.5px solid black; */
 }
 
 .swiper-slide .active-slide{
@@ -134,10 +140,31 @@ body {
 } */
 
 .swiper-slide .card img{
-  background-size: cover;
+  /* background-size: cover; */
   width : 100%;
-  height: 22vw;
+  /* height: 30vw; */
   position : relative;
   z-index : 1;
+}
+
+@media (max-width: 950px) {
+  .swiper-slide {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .swiper-slide .card {
+    max-height: 60vw;
+  }
+
+  .swiper-slide .active-slide{
+    max-height: 100vw;
+  }
+
+  .swiper-slide .card .card-content > *{
+    font-size: 2em;
+  }
+
+  
 }
 
