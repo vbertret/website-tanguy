@@ -145,6 +145,14 @@
     
               timer = setTimeout(showslide, 5000);
             }
+
+            function scroll_smooth(){
+            window.scroll({
+                top: 0, 
+                left: 0, 
+                behavior: 'smooth'
+            });
+        };
     
         </script>
 
@@ -153,7 +161,7 @@
         <section class="table-menu">
         <div class="grid-container">
             <div class="i1 wrap" onclick='location.href = "photographie/modele.html";'><h2>Modèle</h2></div>
-            <div class="i2 wrap" onclick='location.href = "mise-en-scene/assistant-real.html";'><h2>Assistant de réalisation</h2></div>
+            <div class="i2 wrap" onclick='location.href = "mise-en-scene/assistant-real.html";'><h2>Assistant de Réalisation</h2></div>
             <div class="i3 rectangle wrap" onclick='location.href = "photographie/photographie.html";'><h2>Photographies</h2></div>  
             <div class="i4 rectangle wrap" onclick='location.href = "mise-en-scene/realisation.html";'><h2>Réalisations</h2></div>
             <div class="i5 wrap" onclick='location.href = "#apropos";'><h2>&Agrave; propos</h2></div>

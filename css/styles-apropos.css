@@ -12,7 +12,7 @@ section.top-page {
     /* display: flex; */
     background: black;
     /* background: black; */
-    height: 20vh;
+    height: auto;
     /* padding: 25px; */
     margin-bottom: 0px;
 }
