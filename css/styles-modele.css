@@ -13,19 +13,24 @@ section.top-page {
 }
 
 .section-title{
-    padding: 0 3%;
-    display: flex;
-    align-items:space-between;
-    width: 25vw;
+    padding: 0 5%;
+    /* width: 25vw; */
 }
 
 .section-title > div{
     margin : auto;
     font-family: CormorantGaramond-Medium;
+    font-size: 2em;
     padding-bottom: 15px;
 }
 
 .swiper-container {
+    padding: 0 4%;
+    position : relative;
+    overflow: hidden;
+}
+
+.swiper-container-mashup {
     padding: 0 4%;
     position : relative;
     overflow: hidden;
@@ -40,11 +45,27 @@ section.top-page {
     }
 }
 
+@media (max-width: 640px) {
+    .swiper-container-mashup .photo > img{
+        width : 100%;
+        object-fit: cover;
+        height : calc( ( 99vw - 8vw * 0.5 ) /2 );
+    }
+}
+
 @media (min-width: 640px) {
     .photo > img{
         width : 100%;
         object-fit: cover;
         height : calc( ( 99vw - 16vw * 0.5 ) /8 );
+    }
+}
+
+@media (min-width: 640px) {
+    .swiper-container-mashup .photo > img{
+        width : 100%;
+        object-fit: cover;
+        height : calc( ( 99vw - 16vw * 0.5 ) /4 );
     }
 }
 
@@ -90,6 +111,11 @@ section.top-page {
 
     .swiper-container:hover .swiper-button-prev::after,
     .swiper-container:hover .swiper-button-next::after {
+        display: block;
+    }
+
+    .swiper-container-mashup:hover .swiper-button-prev::after,
+    .swiper-container-mashup:hover .swiper-button-next::after {
         display: block;
     }
 
@@ -188,4 +214,22 @@ section.top-page {
     color:white!important;
     background-color:#f44336!important
 }
+
+
+.button-swipe-left, .button-swipe-right{
+    background: none;
+    color: #fff;
+    border : none;
+    font-size: 4vw;
+    padding: 1%;
+    transition: 0.4s;
+    margin-top : auto;
+    margin-bottom: auto;
+}
+
+.button-swipe-left:hover, .button-swipe-right:hover{
+    transform: scale(1.25);
+    cursor : pointer;
+}
+
 

@@ -89,12 +89,7 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
         <div class="section-modele">
-            <div class="section-title">
-                <div> Mashup </div>
-                <div> - </div>
-                <div> 15 images </div>
-            </div>
-            <div class="swiper-container">
+            <div class="swiper-container-mashup">
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
@@ -104,7 +99,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="photo">
-                            <img src="../images/modele/00 - Mashup/2.png" onclick="show(this)">
+                            <img src="../images/modele/00 - Mashup/2.jpg" onclick="show(this)">
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -190,8 +185,6 @@
         <div class="section-modele">
             <div class="section-title">
                 <div> Bleu </div>
-                <div> - </div>
-                <div> 9 images </div>
             </div>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -257,6 +250,36 @@
         </div>
 
         <script>
+            var mySwiper = new Swiper('.swiper-container-mashup', {
+                // Optional parameters
+                spaceBetween: 10,
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+                // loop: true,
+                freeMode: true,
+                loopAdditionalSlides: 1,
+                speed: 500,
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.ombre-noir1',
+                    prevEl: '.ombre-noir2',
+                },
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    // when window width is >= 640px
+                    640: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 1,
+                        freeMode: false
+                    }
+                }
+            })
+        </script>
+
+        <script>
             var mySwiper = new Swiper('.swiper-container', {
                 // Optional parameters
                 spaceBetween: 10,
@@ -288,10 +311,12 @@
 
         <!-- Zoom by clicking -->
 
-        <div id="foreground-content" class="foreground-content" onclick="this.style.display='none'">
-            <span class="button-foreground">&times;</span>
+        <div id="foreground-content" class="foreground-content">
+            <span class="button-foreground" onclick="this.parentNode.style.display='none'">&times;</span>
             <div class="foreground-div content-animate-zoom">
+                <button class="button-swipe-left" onclick="previous_element()">&#10094;</button>
                 <img id="img-for" class="img-for">
+                <button class="button-swipe-right" onclick="next_element()">&#10095;</button>
             </div>
         </div>
 
@@ -300,6 +325,43 @@
             document.getElementById("img-for").src = element.src;
             document.getElementById("foreground-content").style.display = "block";
             }
+
+            function doesFileExist(urlToFile) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('HEAD', urlToFile, false);
+                xhr.send();
+                
+                if (xhr.status == "404") {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            function next_element() {
+                current_photo = document.getElementById("img-for").src
+
+                // parse the url to retrieve only the number before the .jpg
+                var current_photo_number = current_photo.substring(current_photo.lastIndexOf('/') + 1, current_photo.lastIndexOf('.'));
+                next_photo = current_photo.replace(/\d+\.jpg/, (parseInt(current_photo_number) + 1) + ".jpg");
+                
+                if (doesFileExist(next_photo)){
+                    document.getElementById("img-for").src = next_photo;
+                }
+                
+            }
+
+            function previous_element() {
+                current_photo = document.getElementById("img-for").src
+                // parse the url to retrieve only the number before the .jpg
+                var current_photo_number = current_photo.substring(current_photo.lastIndexOf('/') + 1, current_photo.lastIndexOf('.'));
+                if (current_photo_number > 1){
+                    next_photo = current_photo.replace(/\d+\.jpg/, (parseInt(current_photo_number) - 1) + ".jpg");
+                    document.getElementById("img-for").src = next_photo;
+                }
+            }
+
+
         </script>
 
     </section>
