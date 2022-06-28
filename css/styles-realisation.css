@@ -3,7 +3,12 @@ section.top-page {
     background-size: cover;
     height: 100vh;
     padding: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+}
+
+.video-section{
+    background: url("../images/real/background5.jpg") center;
+    background-size: cover;
 }
 
 .video-container{
@@ -14,12 +19,16 @@ section.top-page {
     transition: ease-in-out 0.5s;
 }
 
-
+.video-container{
+    font-family: "FuturaLight";
+    font-size: 18px;
+}
 
 .video-container h1 {
     font-weight: bold;
-    font-size: 30px;
-    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: "Futura";
 }
 
 .video-vignette img{
@@ -33,7 +42,7 @@ section.top-page {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 50px;
-    color: grey;
+    color: white;
     opacity: 0;
     transition: ease-in-out 0.5s;
     /* background-color: black; */
@@ -56,11 +65,12 @@ section.top-page {
 }
 
 .video-vignette:hover i{
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .video-section{
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-top: 50px;
 }
 
 .video-vignette:active i{
@@ -71,9 +81,6 @@ section.top-page {
     transform: scale(1.05,1.05);
 }
 
-.active-div i{
-    opacity: 1;
-}
 
 @media (max-width: 992px) {
     .video-container{
@@ -83,6 +90,10 @@ section.top-page {
     .video-container h1{
         font-size: 5vw;
     }
+
+    .active-div i{
+    opacity: 1;
+}
     
 }
 

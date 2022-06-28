@@ -6,7 +6,7 @@ section.top-page {
 
 @media (max-width: 900px) {
     section.top-page {
-      background: url('../images/cover/cover-photographie.jpg') center;
+      background: url('../images/cover/photographie.jpg') center;
       background-size: cover;
     }
   }
@@ -14,9 +14,10 @@ section.top-page {
   
   @media (min-width: 900px) {
     section.top-page {
-      background: url('../images/cover/cover-photographie2.jpg') center;
+      background: url('../images/cover/photographie7.jpg');
       background-size: cover;
     }
+    
   }
 
 /* .photo-section{
@@ -161,7 +162,7 @@ section.top-page {
         margin-top: 50px;
         margin-bottom: 50px;
         display: grid;
-        /* grid-template-columns: repeat(2, 1fr); */
+        /* grid-template-columns: repeat(8, 1fr); */
         /* grid-template-rows: repeat(7, 60vh); */
         grid-gap: 40px;
         padding: 40px;

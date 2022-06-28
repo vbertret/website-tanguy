@@ -35,7 +35,7 @@ body {
   color: rgba(255,255,255,1);
   text-transform: uppercase;
   letter-spacing: 0.4em;
-  font-size: 100px;
+  font-size: 6vw;
   text-align: center;
   font-family: 'Montserrat';
   font-weight: 1500;
@@ -86,21 +86,41 @@ input[type=submit] {
 
 @media (max-width: 700px) {
 
+  section.top-page {
+    height: 3vh;
+}
+
+
   .contact{
-    display: none;
+    margin: 0 auto;
   }
 
   .background{
+    margin-top: 5vh;
+    flex-direction: column;
     margin-top: 50px;
-    min-height: 70vh;
+    height: 70vh;
   }
   .contact-form {
-    width: 100%;
-    margin: 0 4%;
-    height: 80%;
+    width: 96%;
+    /* margin: 0 2%; */
+    /* height: 120%; */
+      /* z-index: 0; */
+    width: 86%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,1);
+    opacity: 0.85;
+    padding: 2%;
+    /* padding-bottom: 50px; */
+    border-radius: 10px;
   }
 }
-  
+
+footer {
+  background : none;
+}
 
 
 input[type=submit]:hover {

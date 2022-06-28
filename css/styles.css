@@ -1,10 +1,33 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=PT+Sans:ital@1&display=swap');
 
+@font-face {
+    font-family: "Vogue";
+    src: url("../fonts/Vogue.ttf");
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url("../fonts/OPTIFutura Demibold It.ttf");
+}
+
+@font-face {
+    font-family: "FuturaNit";
+    src: url("../fonts/OPTIFuturaDemiBold.otf");
+}
+
+@font-face {
+    font-family: "FuturaLight";
+    src: url("../fonts/SansSerifFLF.otf");
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", "sans-serif";
+    font-family: "FuturaNit";
     font-weight: regular;
     font-style: normal;
     letter-spacing: .07em;    
@@ -75,11 +98,16 @@ li a{
     list-style: none;
     position: absolute;
     z-index: 100;
+    margin-left : 1.5vw;
 }
 
 .nav .sous-cat li{
     /* overflow: hidden; */
     margin-top: 3px;
+}
+
+.nav .sous-cat li a{
+    font-style: italic;
 }
 
 
@@ -153,7 +181,17 @@ li a{
     display: flex;
     align-items: center;
     justify-content: center;
+    color : rgba(255, 255, 255, 0.4) ;
+    transition: 0.3s ease-in-out;
 }
+
+.mobile-menu .deroulant a {
+    font-size: 30px;
+}
+
+/* .mobile-menu :not(.deroulant) a {
+    font-size: 10px; A FAIRE EN JS BCP PLUS SIMPLE
+} */
 
 .mobile-menu li{
     padding-bottom: 5px; 
@@ -190,9 +228,17 @@ li a{
 }
 
 .mobile-menu .deroulant .sous-cat li{
-    background-color: rgba(50, 50, 50, 0.5);
+    /* background-color: rgba(50, 50, 50, 0.5); */
     margin-top : 5px;
     margin-bottom : 5px;
+}
+
+.deroulant > *{
+    color : rgba(255, 255, 255, 1) 
+}
+
+.deroulant a{
+    color : rgba(255, 255, 255, 1) 
 }
 
 .mobile-menu .deroulant .sous-cat li a{
@@ -287,6 +333,7 @@ li a{
     background: none repeat scroll 0 0 rgba(0,0,0,.5);
     color: #fff;
     font-size: 3vw;
+    font-family: "Futura";
     /* line-height: 54px!important; */
     margin-bottom: 15px;
 }
@@ -300,7 +347,7 @@ li a{
     display: inline-block;
     font-size: 2.5vw;
     font-style: normal;
-    font-family: "sans-serif";
+    font-family: "FuturaLight";
     /* line-height: 54px!important; */
     margin-bottom: 15px;
     transition: 1s;
@@ -315,38 +362,38 @@ li a{
 
 .i1 { 
     grid-area: modele ;
-    background: url('../images/table-menu/modele.jpg') center center;
+    background: url('../images/table-menu/c/modele2_bis.jpg') center center;
     background-size: cover;
 }
 .i2 { 
     grid-area: ass-real ;
-    background: url('../images/table-menu/ass-real.jpg') center center;
+    background: url('../images/table-menu/c/ass-real.jpg');
     background-size: cover;
 }
 .i3 { 
     grid-area: photo ;
-    background: url('../images/table-menu/photo.jpg') center center;
+    background: url('../images/table-menu/c/photo3_bis.jpg') center center;
     background-size: cover;
 }
 .i4 { 
     grid-area: real ;
-    background: url('../images/table-menu/real.png') center center;
+    background: url('../images/table-menu/c/real1.jpg') center center;
     background-size: cover;
 }
 .i5 { 
     grid-area: apropos ;
-    background: url('../images/table-menu/a-propos.jpg') center center;
+    background: url('../images/table-menu/c/a-propos.jpg') center center;
     background-size: cover;
 }
 .i6 { 
     grid-area: contact ;
-    background: url('../images/table-menu/contact.jpg') center center;
+    background: url('../images/table-menu/c/contact.jpg') center center;
     background-size: cover;
 }
 
 .grid-container {
   display: grid;
-  grid-gap: 4vw;
+  grid-gap: 1.5vw;
   background-color: white;
   padding: 5vw;
 }
@@ -390,16 +437,25 @@ li a{
   }
 
 .grid-container .wrap:hover h2{
-    font-size: 3vw;
+    font-size: 1.8em;
 }
 
 .grid-container h2{
     text-align: center;
     /* background-color: green; */
     color: white;
-    font-size: 2.5vw;
-    font-family: CormorantGaramond-Medium;
+    font-size: 1.5em;
+    font-family: "Futura";
     transition: all 0.5s ease-out;
+    text-transform: uppercase;
+}
+
+.grid-container .i3 h2, .grid-container .i4 h2{
+    font-size: 2em;
+}
+
+.grid-container .i3 .wrap:hover h2, .grid-container .i4 .wrap:hover h2{
+    font-size: 2.3em;
 }
 
 .wrap{
@@ -418,7 +474,8 @@ footer {
     display: grid;
     /* overflow: hidden; */
     grid-template-columns: repeat(3, 1fr); 
-    background-color: gray;
+    background : url('../images/cover/a-propos.jpeg') center;
+    opacity: 0.8;
     color: #fff;
     padding: 2vh;
     height: 4vw;

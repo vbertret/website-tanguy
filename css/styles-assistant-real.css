@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Vogue";
+  src: url("../fonts/Vogue.ttf");
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../fonts/OPTIFutura Demibold It.ttf");
+}
+
+@font-face {
+  font-family: "FuturaNit";
+  src: url("../fonts/OPTIFuturaDemiBold.otf");
+}
+
+@font-face {
+  font-family: "FuturaLight";
+  src: url("../fonts/SansSerifFLF.otf");
+}
+
 section.top-page {
     /* background-size: cover; */
     height: 100vh;
@@ -28,11 +48,23 @@ body {
 
 body {
   /* background: #16384c; */
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "FuturaNit";
   font-size: 10px;
   color: #000;
   margin: 0;
   padding: 0;
+  background: url("../images/ass-real/texture-marbre.jpg") no-repeat;
+  background-size: cover;
+}
+
+.swiper .swiper-slide .card .card-content h2{
+  font-family: "Futura";
+  font-size: 0.8em;
+}
+
+.swiper .swiper-slide .card .card-content p{
+  font-family: "FuturaNit";
+  font-size: 0.8em;
 }
 
 .swiper {
@@ -41,9 +73,11 @@ body {
   padding-bottom: 22vh;
   margin-bottom: 50px;
 
-  background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* background: url("../images/ass-real/texture-marbre.jpg") center; */
+
+  /* background: #bdc3c7; 
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); */
   
 }
 
@@ -84,15 +118,16 @@ body {
   position:relative;
   display: flex;
   width: 100%;
-  
-  background: #fff;
-  border-radius: 10px;
+  background: white;
+  /* background: url("../images/ass-real/background-card.png"); */
+  background-size: cover;
+  /* border-radius: 10px; */
   flex-direction: column;
   padding: 15px 15px;
   transition : 0.7s ease-in-out;
   max-height: 27vw;
   transition-delay: 0.2s;
-  /* border : 0.5px solid black; */
+  /* border : 2px solid black; */
 }
 
 .swiper-slide .active-slide{
@@ -129,10 +164,6 @@ body {
   transition-delay : 0.3s;
 }
 
-.swiper-slide .card .card-content > *{
-  font-size: 0.8em;
-}
-
 /* .swiper-slide .card:hover .card-content{
   margin-top: 10px;
   visibility: visible;
@@ -145,6 +176,16 @@ body {
   /* height: 30vw; */
   position : relative;
   z-index : 1;
+}
+
+.swiper .swiper-slide .card .card-content h2{
+  font-family: "Futura";
+  font-size: 0.8em;
+}
+
+.swiper .swiper-slide .card .card-content p{
+  font-family: "FuturaLight";
+  font-size: 0.8em;
 }
 
 @media (max-width: 950px) {
@@ -163,6 +204,16 @@ body {
 
   .swiper-slide .card .card-content > *{
     font-size: 2em;
+  }
+
+  .swiper .swiper-slide .card .card-content h2{
+    font-family: "Futura";
+    font-size: 3em;
+  }
+  
+  .swiper .swiper-slide .card .card-content p{
+    font-family: "FuturaLight";
+    font-size: 2.5em;
   }
 
   

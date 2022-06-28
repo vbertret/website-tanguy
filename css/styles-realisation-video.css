@@ -1,11 +1,18 @@
 section.top-page {
-    /* background: url('../images/cover/cover-realisation.jpg') center; */
-    background: black;
+    background: url('../images/cover/a-propos.jpeg') center;
+    /* background: black; */
     background-size: cover;
-    height: 10vh;
+    height: auto;
     /* padding: 25px; */
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
+
+@media (min-width: 800px){
+    section.top-page {
+        height: 8vw;
+    }
+}
+
 
 @media (max-width: 800px) {
     section.top-page {
@@ -14,12 +21,19 @@ section.top-page {
 }
 
 .video-section  *{
-    font-family: CormorantGaramond-Medium;
+    font-family: "Futura";
 }
+
+/* .video-section{
+    padding-top: 20vw;
+    display: flex;
+    flex-direction: column;
+} */
 
 .video-section .title-video{
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3.5em;
+    margin-top: 25px;
 }
 
 .video-section .bar{
@@ -70,7 +84,7 @@ section.top-page {
     width: 90%;
     margin : 0 auto;
     margin-top : 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
  }
 
  .video-section .description p{
@@ -78,6 +92,12 @@ section.top-page {
     text-align: justify;
     margin-top: 10px;
  }
+
+ @media only screen and (max-width: 600px){
+    .video-section{
+        min-height: calc(100vh - 50px - 33px - 25px - 4vw - 4vh)
+    }
+}
 
 
 

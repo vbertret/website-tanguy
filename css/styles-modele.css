@@ -1,10 +1,23 @@
 section.top-page {
-    background: url('../images/cover/cover-realisation.jpg') center;
-    background-size: cover;
     height: 100vh;
     padding: 25px;
     margin-bottom: 50px;
 }
+
+@media (max-width: 900px) {
+    section.top-page {
+    background: url('../images/cover/modele.jpg') center;
+      background-size: cover;
+    }
+  }
+  
+  
+  @media (min-width: 900px) {
+    section.top-page {
+    background: url('../images/cover/modele2.jpg');
+      background-size: cover;
+    }
+  }
 
 /* Modele */
 
@@ -19,7 +32,7 @@ section.top-page {
 
 .section-title > div{
     margin : auto;
-    font-family: CormorantGaramond-Medium;
+    font-family: "Futura";
     font-size: 2em;
     padding-bottom: 15px;
 }

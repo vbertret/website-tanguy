@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/logo.png" type="image/icon type">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/styles-apropos.css">
+    <link rel="icon" href="../../images/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/styles-realisation-video.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Tanguy Carrée</title>
 </head>
@@ -14,26 +14,26 @@
     
     <section class="top-page">
         <header class="header">
-            <div class="titre" onclick='location.href = "./index.html";'>
+            <div class="titre" onclick='location.href = "../../index.html";'>
                 <h1>Tanguy Carrée</h1>
                 <h2>Réalisateur/Photographe</h2>
             </div>
             <nav class="nav">
-                <li><a href="./index.html">Accueil</a></li>
-                <li class="deroulant"><a >Mise en scène</a>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li class="deroulant"><a class="active">Mise en scène</a>
                     <ul class="sous-cat"> 
-                        <li><a href="./mise-en-scene/realisation.html">Réalisation</a></li>
-                        <li><a href="./mise-en-scene/assistant-real.html">Assistant réalisateur</a></li>
+                        <li><a href="../realisation.html">Réalisation</a></li>
+                        <li><a href="../assistant-real.html">Assistant réalisateur</a></li>
                     </ul>
                 </li>
-                <li class="deroulant"><a >Photographie</a>
+                <li class="deroulant"><a>Photographie</a>
                     <ul class="sous-cat">
-                        <li><a href="./photographie/photographie.html">Photographe</a></li>
-                        <li><a href="./photographie/modele.html">Modèle</a></li>
+                        <li><a href="../../photographie/photographie.html">Photographe</a></li>
+                        <li><a href="../../photographie/modele.html">Modèle</a></li>
                     </ul>
                 </li>
-                <li><a href="./a-propos.html" class="active">&Agrave; propos</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="../../a-propos.html">&Agrave; propos</a></li>
+                <li><a href="../../contact.html">Contact</a></li>
             </nav>
 
             <!-- Mobile phone navbar -->
@@ -45,21 +45,21 @@
                 </div>
     
                 <nav class="mobile-menu">
-                    <li><a href="./index.html" class="active">Accueil</a></li>
+                    <li><a href="../../index.html" class="active">Accueil</a></li>
                     <li onclick="toggleSousCat(this)"><a>Mise en scène <i class="arrow down"></i> </a>
                         <ul class="sous-cat"> 
-                            <li><a href="./mise-en-scene/realisation.html">Réalisation</a></li>
-                            <li><a href="./mise-en-scene/assistant-real.html">Assistant réalisateur</a></li>
+                            <li><a href="../realisation.html">Réalisation</a></li>
+                            <li><a href="../assistant-real.html">Assistant réalisateur</a></li>
                         </ul>
                     </li>
                     <li onclick="toggleSousCat(this)"><a>Photographie <i class="arrow down"></i> </a>
                         <ul class="sous-cat">
-                            <li><a href="./photographie/photographie.html">Photographe</a></li>
-                            <li><a href="./photographie/modele.html">Modèle</a></li>
+                            <li><a href="../../photographie/photographie.html">Photographe</a></li>
+                            <li><a href="../../photographie/modele.html">Modèle</a></li>
                         </ul>
                     </li>
-                    <li><a href="./a-propos.html">&Agrave; propos</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="../../a-propos.html">&Agrave; propos</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
                 </nav>
     
                 <script>
@@ -84,38 +84,20 @@
         </header>       
     </section>
 
-    <!-- Create a section about me with text on the right and a picture on the left -->
-    <div class="a-propos">
+    <section class="video-section">
 
-        <div class="align-right">           
-            <h1>MON PARCOURS</h1>
+        <h2 class="title-video"> SHOWREEL/BANDE DEMO </h2>
 
-            <p>
-                Ancien Sportif de Haut Niveau en Canoë-Kayak, je décide de privilégier le Cinéma en
-                intégrant l’École Supérieure de Réalisation Audiovisuelle de Rennes. Parallèlement je me
-                forme dans le théâtre et la danse à Paris, avant d’enchainer les réalisations, Courts Métrages, Clips Vidéos et Publicités.
-            </p>
-            <p>
+        <!-- <div class="bar"></div> -->
 
-                Persuadé de l’importance de la pluridisciplinarité, j’occupe différents postes techniques qui
-                me poussent à multiplier les tournages dans l’assistanat de réalisation et les shootings dans
-                la photographie.
-            </p>
+            <div class="video-container" preload="true" id=1>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AJ8BAFerb4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/woFkigktuiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            </div>
 
-            <p>
-                Co-créateur des entreprises The Breizh To Be dans le milieu sportif et de l’Agence Bellevue
-dans            l’audiovisuel, je tiens à garder une polyvalence cruciale à la gestion d’une équipe.
-            </p>
-        </div>
+            <div class="description"> </div>
 
-        <div class="align-left">
-            <img src="images/a-propos3.jpeg" alt="Photo de Tanguy Carrée">
-        </div>
-
-    </div>
-
-
-
+    </section>
 
     <script>
         function scroll_smooth(){
