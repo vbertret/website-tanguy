@@ -850,7 +850,7 @@
         // }());
 
             $('.foreground-content').click(function(e) {   
-            if( !$(e.target).hasClass('img-for') && !$(e.target).hasClass('button-swipe-left') && !$(e.target).hasClass('button-swipe-right'))
+            if( (!$(e.target).hasClass('img-for')) && (!$(e.target).hasClass('button-swipe-left')) && (!$(e.target).hasClass('button-swipe-right')))
             {
                 this.style.display='none'
             }
