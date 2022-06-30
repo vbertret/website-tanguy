@@ -97,6 +97,14 @@ section.top-page {
     .video-section{
         min-height: calc(100vh - 50px - 33px - 25px - 4vw - 4vh)
     }
+
+    .video-section .description p{
+        font-size: 1.5em;
+    }
+
+    .video-section .description p b{
+        font-size: 1.2em;
+     }
 }
 
 
