@@ -68,9 +68,13 @@
                         result = menu.parentNode.classList.toggle('open');
                         if(result == true){
                             document.body.style.overflow = "hidden";
+                            document.getElementsByClassName("video-container")[0].style.zIndex = "-1";
                         }
                         else{
                             document.body.style.overflow = "auto";
+
+                            setTimeout(() => { document.getElementsByClassName("video-container")[0].style.zIndex = "1";; }, 500);
+        
                         }
                     }
     
@@ -95,7 +99,9 @@
                 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/woFkigktuiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             </div>
 
-            <div class="description"> </div>
+            <div class="description">
+                <p><b>Showreel/Bande Démo - Tanguy Carrée</b></p>    
+            </div>
 
     </section>
 

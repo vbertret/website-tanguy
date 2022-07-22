@@ -68,9 +68,13 @@
                         result = menu.parentNode.classList.toggle('open');
                         if(result == true){
                             document.body.style.overflow = "hidden";
+                            document.getElementsByClassName("video-container")[0].style.zIndex = "-1";
                         }
                         else{
                             document.body.style.overflow = "auto";
+
+                            setTimeout(() => { document.getElementsByClassName("video-container")[0].style.zIndex = "1";; }, 500);
+        
                         }
                     }
     
@@ -96,15 +100,19 @@
             </div>
 
             <div class="description">
-                <p> <b>Production</b> : Hubble Productions – John Production Studio </p>
-                <p> <b>Comédiens</b>: Juliette Catroux, Tanguy Carrée, Alix Pradel, Ismaël Messaoudi-Bazile, Louison Le Barillier et Jean-Marie Mendiant </p>
-                <p> <b>Écriture et Réalisation </b> : Tanguy Carrée </p>
-                <p> <b>Directeur Photo et Montage </b> : Arthur Jan </p>
-                <p> <b>Assistant-Réalisateur</b> : Diégo Maunoury </p>
-                <p> <b>Cheffe Décoratrice</b> : Mélody Laisné </p>
-                <p> <b>Régisseur Général</b> : Valentin Postec </p>
-                <p> <b>Électro</b> : Manu Konlein </p>
-                <p> <b>Sound Design</b> : Paul Buche </p>
+                <p> <b>Production : </b> Hubble Productions – John Production Studio </p>
+                <br>
+                <p> <b>Comédiens : </b> Juliette Catroux, Tanguy Carrée, Alix Pradel, Ismaël Messaoudi-Bazile, Louison Le Barillier et Jean-Marie Mendiant </p>
+                <p> <b>Écriture et Réalisation : </b> Tanguy Carrée </p>
+                <br>
+                <p> <b>Directeur Photo et Montage : </b> Arthur Jan </p>
+                <p> <b>Assistant-Réalisateur : </b> Diégo Maunoury </p>
+                <p> <b>Cheffe Décoratrice : </b> Mélody Laisné </p>
+                <p> <b>Régisseur Général : </b> Valentin Postec </p>
+                <p> <b>Électro : </b> Manu Konlein </p>
+                <p> <b>Sound Design : </b> Paul Buche </p>
+                <br>
+                <p> <b>Artiste : </b> Juliette C.</p>
             </div>
 
     </section>

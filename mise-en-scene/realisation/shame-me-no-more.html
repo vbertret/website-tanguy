@@ -68,9 +68,13 @@
                         result = menu.parentNode.classList.toggle('open');
                         if(result == true){
                             document.body.style.overflow = "hidden";
+                            document.getElementsByClassName("video-container")[0].style.zIndex = "-1";
                         }
                         else{
                             document.body.style.overflow = "auto";
+
+                            setTimeout(() => { document.getElementsByClassName("video-container")[0].style.zIndex = "1";; }, 500);
+        
                         }
                     }
     
@@ -97,10 +101,12 @@
 
             <div class="description">
 
-                <p> <b>Écriture et Réalisation</b> : Tanguy Carrée</p>
-                <p> <b>Directeur Photo et Montag</b>e : Arthur Jan</p>
-                <p> <b>Make-Up Artist</b> : Tifène Bedouet</p>
-                <p> <b>Étalonneur</b> : Corentin De Meirler</p>
+                <p> <b>Écriture et Réalisation : </b> Tanguy Carrée</p>
+                <p> <b>Directeur Photo et Montage : </b> Arthur Jan</p>
+                <p> <b>Make-Up Artist : </b> Tifène Bedouet</p>
+                <p> <b>Étalonneur : </b> Corentin De Meirler</p>
+                <br>
+                <p> <b>Artiste : </b> Lowdy Williams</p>
 
             </div>
 

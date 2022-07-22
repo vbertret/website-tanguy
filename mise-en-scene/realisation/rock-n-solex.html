@@ -68,9 +68,13 @@
                         result = menu.parentNode.classList.toggle('open');
                         if(result == true){
                             document.body.style.overflow = "hidden";
+                            document.getElementsByClassName("video-container")[0].style.zIndex = "-1";
                         }
                         else{
                             document.body.style.overflow = "auto";
+
+                            setTimeout(() => { document.getElementsByClassName("video-container")[0].style.zIndex = "1";; }, 500);
+        
                         }
                     }
     
@@ -97,17 +101,19 @@
 
             <div class="description">
 
-                <p><b>Genre</b> : Teaser</p>
-                <p><b>Production</b> : Festival du Rock N’Solex</p>
-                <p><b>Comédiens</b> : Pauline Rouxeville et Sarah Larive</p>
-                <p><b>Écriture et Réalisation</b> : Tanguy Carrée</p>
-                <p><b>Directeur de la Photographie</b> : Théo L’Haridon</p>
-                <p><b>Assistant-Réalisateur</b> : Tristan Cousquer</p>
-                <p><b>Chef-Opérateur Son</b> : Étienne Boué</p>
-                <p><b>Monteurs</b> : Hugo Sterchi et Arthur Jan</p>
-                <p><b>Cheffe-Costumière</b> : Mélody Laisné</p>
-                <p><b>Régisseur Général</b> : William Lacroix</p>
-                <p><b>Compositeur</b> : Ludo</p>
+                <p><b>Genre : </b> Teaser</p>
+                <p><b>Production : </b> Festival du Rock N’Solex</p>
+                <br>
+                <p><b>Comédiens : </b> Pauline Rouxeville et Sarah Larive</p>
+                <br>
+                <p><b>Écriture et Réalisation : </b> Tanguy Carrée</p>
+                <p><b>Directeur de la Photographie : </b> Théo L’Haridon</p>
+                <p><b>Assistant-Réalisateur : </b> Tristan Cousquer</p>
+                <p><b>Chef-Opérateur Son : </b> Étienne Boué</p>
+                <p><b>Monteurs : </b> Hugo Sterchi et Arthur Jan</p>
+                <p><b>Cheffe-Costumière : </b> Mélody Laisné</p>
+                <p><b>Régisseur Général : </b> William Lacroix</p>
+                <p><b>Compositeur : </b> Ludo</p>
  
             </div>
 

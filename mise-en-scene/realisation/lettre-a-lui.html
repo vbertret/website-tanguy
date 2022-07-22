@@ -68,9 +68,13 @@
                         result = menu.parentNode.classList.toggle('open');
                         if(result == true){
                             document.body.style.overflow = "hidden";
+                            document.getElementsByClassName("video-container")[0].style.zIndex = "-1";
                         }
                         else{
                             document.body.style.overflow = "auto";
+
+                            setTimeout(() => { document.getElementsByClassName("video-container")[0].style.zIndex = "1";; }, 500);
+        
                         }
                     }
     
@@ -91,21 +95,24 @@
         <!-- <div class="bar"></div> -->
 
             <div class="video-container" preload="true" id=1>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/RxPp3iZzinI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qVzpBtij2ZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/woFkigktuiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             </div>
 
             <div class="description">
 
-                <p><b>Production</b> : Hubble Productions</p>
-                <p><b>Comédiens</b> : Juliette Catroux et Pierre Grimoux</p>
-                <p><b>Écriture et Réalisation</b> : Tanguy Carrée</p>
-                <p><b>Directeur Photo et Montage</b> : Arthur Jan</p>
-                <p><b>Cheffe-Décoratrice</b> : Mélody Laisné</p>
-                <p><b>Électro</b> : Mélanie Rodet, William Lacroix, Diégo Maunoury et Marius Bouvier</p>
-                <p><b>Machino</b> : Paul Raimbaud, Anthony Launay, Romain Hugues et Valentin Postec</p>
-                <p><b>Régisseuse Générale</b> : Sofia Bouqqali</p>
-
+                <p><b>Production : </b>Hubble Productions</p>
+                <br>
+                <p><b>Comédiens : </b>Juliette Catroux et Pierre Grimoux</p>
+                <br>
+                <p><b>Écriture et Réalisation : </b>Tanguy Carrée</p>
+                <p><b>Directeur Photo et Montage : </b>Arthur Jan</p>
+                <p><b>Cheffe-Décoratrice : </b>Mélody Laisné</p>
+                <p><b>Électro : </b>Mélanie Rodet, William Lacroix, Diégo Maunoury et Marius Bouvier</p>
+                <p><b>Machino : </b>Paul Raimbaud, Anthony Launay, Romain Hugues et Valentin Postec</p>
+                <p><b>Régisseuse Générale : </b>Sofia Bouqqali</p>
+                <br>
+                <p> <b>Artiste : </b> Juliette C.</p>
  
             </div>
 
