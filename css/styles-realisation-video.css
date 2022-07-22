@@ -62,7 +62,7 @@ section.top-page {
         margin-top : 10px;
         width: 90%;
         height: 30vh;
-        z-index: -1;
+        z-index: 1;
     }
 }
     
